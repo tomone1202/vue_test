@@ -55,7 +55,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/Search.vue"),
     // props: true,
     // props: { testA: "ha", testB: "ma" },
-    props: (params) => ({
+    props: params => ({
       testB: "testB從router內寫死",
       token: params.params.token,
       query: params.query.token,
